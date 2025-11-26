@@ -1,0 +1,13 @@
+syms x;
+fx = x^2 - 2*sin(x) + 1/2;
+fxi = matlabFunction(fx);
+y = fxi(2);
+fprintf('Ket qua cua phuong trinh: %.5f\n', y);
+% fex = x - 2;
+% fxi = matlabFunction(fex);
+% y_2 = fxi(2);
+% a = 1:0:1.5;
+% y_value = fxi(a);
+% f = 'sin(x) + 1';
+% f_sym = str2func(['@(x)', f]);
+% y_f = f_sym(a);

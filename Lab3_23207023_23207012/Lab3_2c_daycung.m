@@ -1,0 +1,12 @@
+a = -0.5;
+b = 0.5;
+c = -0.05;
+d = 0.5;
+ss = 5e-5;
+fx = 'x^2 - sin(x)';
+[nghiem1,solanlap1] = daycung(fx, a, b, ss);
+fprintf('Nghiệm gần đúng của phương trình: %.5f\n', nghiem1);
+fprintf('Số lần lặp (khoảng phân ly 1): %d\n', solanlap1);
+[nghiem2,solanlap2] = daycung(fx, c, d, ss);
+fprintf('Nghiệm gần đúng của phương trình: %.5f\n', nghiem2);
+fprintf('Số lần lặp (khoảng phân ly 2): %d\n', solanlap2);
